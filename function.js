@@ -3,7 +3,7 @@
 //     const stroll = document.getElementById("stroll").value;
 //     const stdepart = document.getElementById("stdepart").value;
 //     const stsection = document.getElementById("stsection").value;
-//     const addUserURL = "https://mongoprac1.herokuapp.com/user";
+//     const addUserURL = "https://crudappass.herokuapp.com/user";
   
 //     if (stname === "" || stroll === "" || stdepart === "" || stsection === "") {
 //       alert("Please Fill All the Fields");
@@ -35,7 +35,7 @@ function postcreate(){
     let stdepart=document.getElementById("stdepart").value;
     let stsection=document.getElementById("stsection").value;
     
-    axios.post('https://mongoprac1.herokuapp.com/user',{
+    axios.post('https://crudappass.herokuapp.com/user',{
         
         stname:stname,
         stroll:stroll,
@@ -73,7 +73,7 @@ function postcreate(){
 //   });
 // };
 function get_all(){
-    axios.get('https://mongoprac1.herokuapp.com/users')
+    axios.get('https://crudappass.herokuapp.com/users')
   .then(function (response) {
       $html='';
     console.log(response);
@@ -148,7 +148,7 @@ function update_student(){
 }
 function delete_student(){
     let id = document.getElementById('student_id').value;
-    axios.delete('https://mongoprac1.herokuapp.com/user/'+id)
+    axios.delete('https://crudappass.herokuapp.com/user/'+id)
   .then(function (response) {
     console.log(response);
     alert(response.data)

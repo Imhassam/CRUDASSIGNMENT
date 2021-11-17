@@ -131,7 +131,7 @@ function update_student(){
   let stsection = document.getElementById('stsection').value;
 
   let id = document.getElementById('student_id').value;
-  axios.put('https://mongoprac1.herokuapp.com/user/'+id, {
+  axios.put('https://crudappass.herokuapp.com/user/'+id, {
     stname:stname,
     stroll:stroll,
     stdepart:stdepart,
